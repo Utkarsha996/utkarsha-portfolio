@@ -1,49 +1,55 @@
 import "./App.css";
 
 function App() {
-  const skills = [
-  // Programming & Embedded
-  "C",
-  "C++",
-  "Embedded C",
-  "STM32",
-  "ESP32",
-  "ESP8266",
-  "Arduino",
-  "8051",
-  "LPC21xx",
+  // ================= SKILLS =================
 
-  // Microcontroller & Embedded Concepts
-  "GPIO",
-  "Timers",
-  "Interrupts",
-  "ADC",
-  "PWM",
-  "UART",
-  "SPI",
-  "I2C",
-  "CAN",
-  "RTOS",
+  const skills = {
+    programming: [
+      "C",
+      "C++",
+      "Embedded C",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+    ],
 
-  // Web Development
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Bootstrap",
+    embedded: [
+      "STM32",
+      "ESP32",
+      "ESP8266",
+      "Arduino",
+      "8051",
+      "LPC21xx",
+      "GPIO",
+      "Timers",
+      "Interrupts",
+      "ADC",
+      "PWM",
+      "UART",
+      "SPI",
+      "I2C",
+      "CAN",
+      "RTOS",
+    ],
 
-  // IoT & Hardware
-  "IoT",
-  "Sensor Interfacing",
-  "PCB Design",
+    iot: [
+      "IoT",
+      "Sensor Interfacing",
+      "PCB Design",
+    ],
 
-  // Tools
-  "STM32CubeIDE",
-  "Keil uVision",
-  "Proteus",
-  "Git",
-  "GitHub",
-];
+    web: [
+      "Bootstrap",
+      "STM32CubeIDE",
+      "Keil uVision",
+      "Proteus",
+      "Git",
+      "GitHub",
+    ],
+  };
+
+  // ================= PROJECTS =================
 
   const projects = [
     {
@@ -90,26 +96,28 @@ function App() {
         "Developed an autonomous robotics platform with Bluetooth control and multiple operational modes including line following and obstacle avoidance.",
       tech: ["Bluetooth", "Robotics", "Embedded"],
     },
+
     {
-  number: "06",
-  category: "WEB DEVELOPMENT",
-  title: "Amazon Clone",
-  description:
-    "Developed a responsive Amazon-inspired e-commerce webpage using HTML, CSS and JavaScript, including navigation, search, hero section, product categories and interactive UI components.",
-  tech: ["HTML", "CSS", "JavaScript"],
-  github: "YOUR_AMAZON_GITHUB_URL",
-  demo: "YOUR_AMAZON_LIVE_URL",
-},
-{
-  number: "07",
-  category: "REACT DEVELOPMENT",
-  title: "Personal React Portfolio",
-  description:
-    "Designed and developed a responsive personal portfolio using React to showcase my Embedded Systems, IoT, Machine Learning and Web Development projects.",
-  tech: ["React", "JavaScript", "CSS", "Vite"],
-  github: "https://github.com/Utkarsha996/utkarsha-portfolio",
-  demo: "YOUR_VERCEL_URL",
-},
+      number: "06",
+      category: "WEB DEVELOPMENT",
+      title: "Amazon Clone",
+      description:
+        "Developed a responsive Amazon-inspired e-commerce webpage using HTML, CSS and JavaScript, including navigation, search, hero section, product categories and interactive UI components.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Utkarsha996",
+      demo: "#",
+    },
+
+    {
+      number: "07",
+      category: "REACT DEVELOPMENT",
+      title: "Personal React Portfolio",
+      description:
+        "Designed and developed a responsive personal portfolio using React to showcase Embedded Systems, IoT, Machine Learning and Web Development projects.",
+      tech: ["React", "JavaScript", "CSS", "Vite"],
+      github: "https://github.com/Utkarsha996/utkarsha-portfolio",
+      demo: "#",
+    },
   ];
 
   return (
@@ -118,7 +126,6 @@ function App() {
       {/* ================= NAVBAR ================= */}
 
       <nav className="navbar">
-
         <div className="nav-container">
 
           <a href="#home" className="logo">
@@ -126,25 +133,16 @@ function App() {
           </a>
 
           <div className="nav-links">
-
             <a href="#home">Home</a>
-
             <a href="#about">About</a>
-
             <a href="#skills">Skills</a>
-
             <a href="#projects">Projects</a>
-
             <a href="#experience">Experience</a>
-
             <a href="#education">Education</a>
-
             <a href="#contact">Contact</a>
-
           </div>
 
         </div>
-
       </nav>
 
 
@@ -230,16 +228,14 @@ function App() {
         </div>
 
 
-        {/* HERO GRAPHIC */}
+        {/* ================= HERO GRAPHIC ================= */}
 
         <div className="hero-visual">
 
           <div className="tech-circle">
 
             <div className="orbit orbit-one"></div>
-
             <div className="orbit orbit-two"></div>
-
             <div className="orbit orbit-three"></div>
 
             <div className="chip">
@@ -425,127 +421,127 @@ function App() {
 
       {/* ================= SKILLS ================= */}
 
-<section className="section dark-section" id="skills">
+      <section className="section dark-section" id="skills">
 
-  <div className="section-heading">
+        <div className="section-heading">
 
-    <div className="section-number">
-      02
-    </div>
-
-    <div>
-      <p className="section-label">
-        MY TOOLKIT
-      </p>
-
-      <h2>
-        Technical Skills
-      </h2>
-    </div>
-
-  </div>
-
-
-  <div className="skills-wrapper">
-
-    {/* PROGRAMMING */}
-
-    <div className="skill-group">
-
-      <h3>
-        Programming
-      </h3>
-
-      <div className="skills-list">
-
-        {skills.programming.map((skill, index) => (
-          <div
-            className="skill-tag"
-            key={index}
-          >
-            {skill}
+          <div className="section-number">
+            02
           </div>
-        ))}
 
-      </div>
+          <div>
+            <p className="section-label">
+              MY TOOLKIT
+            </p>
 
-    </div>
-
-
-    {/* EMBEDDED SYSTEMS */}
-
-    <div className="skill-group">
-
-      <h3>
-        Embedded Systems
-      </h3>
-
-      <div className="skills-list">
-
-        {skills.embedded.map((skill, index) => (
-          <div
-            className="skill-tag"
-            key={index}
-          >
-            {skill}
+            <h2>
+              Technical Skills
+            </h2>
           </div>
-        ))}
 
-      </div>
-
-    </div>
+        </div>
 
 
-    {/* IoT & ELECTRONICS */}
+        <div className="skills-wrapper">
 
-    <div className="skill-group">
+          {/* PROGRAMMING */}
 
-      <h3>
-        IoT & Electronics
-      </h3>
+          <div className="skill-group">
 
-      <div className="skills-list">
+            <h3>
+              Programming
+            </h3>
 
-        {skills.iot.map((skill, index) => (
-          <div
-            className="skill-tag"
-            key={index}
-          >
-            {skill}
+            <div className="skills-list">
+
+              {skills.programming.map((skill, index) => (
+                <div
+                  className="skill-tag"
+                  key={index}
+                >
+                  {skill}
+                </div>
+              ))}
+
+            </div>
+
           </div>
-        ))}
-
-      </div>
-
-    </div>
 
 
-    {/* WEB DEVELOPMENT & TOOLS */}
+          {/* EMBEDDED SYSTEMS */}
 
-    <div className="skill-group">
+          <div className="skill-group">
 
-      <h3>
-        Web Development & Tools
-      </h3>
+            <h3>
+              Embedded Systems
+            </h3>
 
-      <div className="skills-list">
+            <div className="skills-list">
 
-        {skills.web.map((skill, index) => (
-          <div
-            className="skill-tag"
-            key={index}
-          >
-            {skill}
+              {skills.embedded.map((skill, index) => (
+                <div
+                  className="skill-tag"
+                  key={index}
+                >
+                  {skill}
+                </div>
+              ))}
+
+            </div>
+
           </div>
-        ))}
 
-      </div>
 
-    </div>
+          {/* IoT & ELECTRONICS */}
 
-  </div>
+          <div className="skill-group">
 
-</section>
+            <h3>
+              IoT & Electronics
+            </h3>
+
+            <div className="skills-list">
+
+              {skills.iot.map((skill, index) => (
+                <div
+                  className="skill-tag"
+                  key={index}
+                >
+                  {skill}
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+
+
+          {/* WEB DEVELOPMENT & TOOLS */}
+
+          <div className="skill-group">
+
+            <h3>
+              Web Development & Tools
+            </h3>
+
+            <div className="skills-list">
+
+              {skills.web.map((skill, index) => (
+                <div
+                  className="skill-tag"
+                  key={index}
+                >
+                  {skill}
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
       {/* ================= PROJECTS ================= */}
@@ -592,13 +588,16 @@ function App() {
 
               </div>
 
+
               <p className="project-category">
                 {project.category}
               </p>
 
+
               <h3>
                 {project.title}
               </h3>
+
 
               <p className="project-description">
                 {project.description}
@@ -617,12 +616,42 @@ function App() {
 
                 </div>
 
-                <a
-                  href="#contact"
-                  className="project-link"
-                >
-                  Discuss →
-                </a>
+
+                <div className="project-links">
+
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      GitHub →
+                    </a>
+                  )}
+
+                  {project.demo && project.demo !== "#" && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Live Demo →
+                    </a>
+                  )}
+
+                  {(!project.github || project.github === "#") &&
+                    (!project.demo || project.demo === "#") && (
+                      <a
+                        href="#contact"
+                        className="project-link"
+                      >
+                        Discuss →
+                      </a>
+                    )}
+
+                </div>
 
               </div>
 
@@ -649,6 +678,7 @@ function App() {
           </div>
 
           <div>
+
             <p className="section-label">
               PROFESSIONAL JOURNEY
             </p>
@@ -656,6 +686,7 @@ function App() {
             <h2>
               Experience
             </h2>
+
           </div>
 
         </div>
@@ -736,6 +767,7 @@ function App() {
           </div>
 
           <div>
+
             <p className="section-label">
               ACADEMIC BACKGROUND
             </p>
@@ -743,6 +775,7 @@ function App() {
             <h2>
               Education
             </h2>
+
           </div>
 
         </div>
@@ -855,6 +888,7 @@ function App() {
           </div>
 
           <div>
+
             <p className="section-label">
               LET'S CONNECT
             </p>
@@ -862,6 +896,7 @@ function App() {
             <h2>
               Contact Me
             </h2>
+
           </div>
 
         </div>
@@ -884,6 +919,8 @@ function App() {
 
 
             <div className="contact-details">
+
+              {/* EMAIL */}
 
               <a
                 href="mailto:utkarshatawalare5@gmail.com"
@@ -909,6 +946,8 @@ function App() {
               </a>
 
 
+              {/* LOCATION */}
+
               <div className="contact-item">
 
                 <span className="contact-icon">
@@ -929,6 +968,8 @@ function App() {
 
               </div>
 
+
+              {/* LINKEDIN */}
 
               <a
                 href="https://www.linkedin.com/in/utkarsha-tawalare-2aa1832a7/"
@@ -955,6 +996,8 @@ function App() {
 
               </a>
 
+
+              {/* GITHUB */}
 
               <a
                 href="https://github.com/Utkarsha996"
@@ -986,6 +1029,8 @@ function App() {
           </div>
 
 
+          {/* CONTACT BOX */}
+
           <div className="contact-box">
 
             <div className="contact-box-icon">
@@ -1000,6 +1045,7 @@ function App() {
               Let's connect and discuss how I can
               contribute to your team.
             </p>
+
 
             <div className="contact-actions">
 
