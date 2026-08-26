@@ -2,31 +2,48 @@ import "./App.css";
 
 function App() {
   const skills = [
-    "C",
-    "C++",
-    "Embedded C",
-    "STM32",
-    "ESP32",
-    "ESP8266",
-    "Arduino",
-    "8051",
-    "LPC21xx",
-    "GPIO",
-    "Timers",
-    "Interrupts",
-    "ADC",
-    "UART",
-    "SPI",
-    "I2C",
-    "CAN",
-    "RTOS",
-    "STM32CubeIDE",
-    "Keil uVision",
-    "Proteus",
-    "PCB Design",
-    "Sensor Interfacing",
-    "IoT",
-  ];
+  // Programming & Embedded
+  "C",
+  "C++",
+  "Embedded C",
+  "STM32",
+  "ESP32",
+  "ESP8266",
+  "Arduino",
+  "8051",
+  "LPC21xx",
+
+  // Microcontroller & Embedded Concepts
+  "GPIO",
+  "Timers",
+  "Interrupts",
+  "ADC",
+  "PWM",
+  "UART",
+  "SPI",
+  "I2C",
+  "CAN",
+  "RTOS",
+
+  // Web Development
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Bootstrap",
+
+  // IoT & Hardware
+  "IoT",
+  "Sensor Interfacing",
+  "PCB Design",
+
+  // Tools
+  "STM32CubeIDE",
+  "Keil uVision",
+  "Proteus",
+  "Git",
+  "GitHub",
+];
 
   const projects = [
     {
@@ -73,6 +90,26 @@ function App() {
         "Developed an autonomous robotics platform with Bluetooth control and multiple operational modes including line following and obstacle avoidance.",
       tech: ["Bluetooth", "Robotics", "Embedded"],
     },
+    {
+  number: "06",
+  category: "WEB DEVELOPMENT",
+  title: "Amazon Clone",
+  description:
+    "Developed a responsive Amazon-inspired e-commerce webpage using HTML, CSS and JavaScript, including navigation, search, hero section, product categories and interactive UI components.",
+  tech: ["HTML", "CSS", "JavaScript"],
+  github: "YOUR_AMAZON_GITHUB_URL",
+  demo: "YOUR_AMAZON_LIVE_URL",
+},
+{
+  number: "07",
+  category: "REACT DEVELOPMENT",
+  title: "Personal React Portfolio",
+  description:
+    "Designed and developed a responsive personal portfolio using React to showcase my Embedded Systems, IoT, Machine Learning and Web Development projects.",
+  tech: ["React", "JavaScript", "CSS", "Vite"],
+  github: "https://github.com/Utkarsha996/utkarsha-portfolio",
+  demo: "YOUR_VERCEL_URL",
+},
   ];
 
   return (
