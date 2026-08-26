@@ -208,7 +208,7 @@ function App() {
             <span>•</span>
 
             <a
-              href="YOUR_LINKEDIN_URL"
+              href="https://www.linkedin.com/in/utkarsha-tawalare-2aa1832a7/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -218,7 +218,7 @@ function App() {
             <span>•</span>
 
             <a
-              href="YOUR_GITHUB_URL"
+              href="https://github.com/Utkarsha996"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -425,88 +425,127 @@ function App() {
 
       {/* ================= SKILLS ================= */}
 
-      <section className="section dark-section" id="skills">
+<section className="section dark-section" id="skills">
 
-        <div className="section-heading">
+  <div className="section-heading">
 
-          <div className="section-number">
-            02
+    <div className="section-number">
+      02
+    </div>
+
+    <div>
+      <p className="section-label">
+        MY TOOLKIT
+      </p>
+
+      <h2>
+        Technical Skills
+      </h2>
+    </div>
+
+  </div>
+
+
+  <div className="skills-wrapper">
+
+    {/* PROGRAMMING */}
+
+    <div className="skill-group">
+
+      <h3>
+        Programming
+      </h3>
+
+      <div className="skills-list">
+
+        {skills.programming.map((skill, index) => (
+          <div
+            className="skill-tag"
+            key={index}
+          >
+            {skill}
           </div>
+        ))}
 
-          <div>
-            <p className="section-label">
-              MY TOOLKIT
-            </p>
+      </div>
 
-            <h2>
-              Technical Skills
-            </h2>
+    </div>
+
+
+    {/* EMBEDDED SYSTEMS */}
+
+    <div className="skill-group">
+
+      <h3>
+        Embedded Systems
+      </h3>
+
+      <div className="skills-list">
+
+        {skills.embedded.map((skill, index) => (
+          <div
+            className="skill-tag"
+            key={index}
+          >
+            {skill}
           </div>
+        ))}
 
-        </div>
+      </div>
+
+    </div>
 
 
-        <div className="skills-wrapper">
+    {/* IoT & ELECTRONICS */}
 
-          <div className="skill-group">
+    <div className="skill-group">
 
-            <h3>
-              Programming & Embedded
-            </h3>
+      <h3>
+        IoT & Electronics
+      </h3>
 
-            <div className="skills-list">
+      <div className="skills-list">
 
-              {skills.slice(0, 10).map((skill, index) => (
-                <div className="skill-tag" key={index}>
-                  {skill}
-                </div>
-              ))}
-
-            </div>
-
+        {skills.iot.map((skill, index) => (
+          <div
+            className="skill-tag"
+            key={index}
+          >
+            {skill}
           </div>
+        ))}
+
+      </div>
+
+    </div>
 
 
-          <div className="skill-group">
+    {/* WEB DEVELOPMENT & TOOLS */}
 
-            <h3>
-              Communication & Peripherals
-            </h3>
+    <div className="skill-group">
 
-            <div className="skills-list">
+      <h3>
+        Web Development & Tools
+      </h3>
 
-              {skills.slice(10, 18).map((skill, index) => (
-                <div className="skill-tag" key={index}>
-                  {skill}
-                </div>
-              ))}
+      <div className="skills-list">
 
-            </div>
-
+        {skills.web.map((skill, index) => (
+          <div
+            className="skill-tag"
+            key={index}
+          >
+            {skill}
           </div>
+        ))}
 
+      </div>
 
-          <div className="skill-group">
+    </div>
 
-            <h3>
-              Tools & Technologies
-            </h3>
+  </div>
 
-            <div className="skills-list">
-
-              {skills.slice(18).map((skill, index) => (
-                <div className="skill-tag" key={index}>
-                  {skill}
-                </div>
-              ))}
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+</section>
 
 
       {/* ================= PROJECTS ================= */}
@@ -761,7 +800,7 @@ function App() {
               </p>
 
               <span className="education-result">
-                Percentage: 86.00%
+                Percentage: 89.16%
               </span>
 
             </div>
@@ -790,7 +829,7 @@ function App() {
               </p>
 
               <span className="education-result">
-                Percentage: 89.16%
+                Percentage: 86.00%
               </span>
 
             </div>
