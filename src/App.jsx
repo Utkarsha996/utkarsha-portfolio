@@ -918,7 +918,7 @@ function App() {
 
 
               <a
-                href="YOUR_GITHUB_URL"
+                href="https://github.com/Utkarsha996"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-item"
